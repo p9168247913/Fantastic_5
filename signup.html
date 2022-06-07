@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #48c9b0;
+            color: white;
+        }
+        input{
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            height: 50px;
+            border: transparent;
+        }
+        button{
+            width: 81.5%;
+            margin: auto;
+            margin-top: 20px;
+            height: 55px;
+            background-color: #17a589;
+            color: white;
+            border: transparent;
+        }
+        button:hover{
+            background-color: rgb(122, 190, 148);
+        }
+        #container>button:last-child{
+            margin-bottom: 40px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let main_div=document.createElement("div")
+    main_div.setAttribute("id","container")
+    document.querySelector("body").append(main_div);
+    let head=document.createElement("h1")
+    head.innerText="- Visitor -";
+    let input_1=document.createElement("input")
+    input_1.type="name"
+    input_1.placeholder="Full name";
+    let input_2=document.createElement("input")
+    input_2.type="email"
+    input_2.placeholder="Email";
+    let input_3=document.createElement("input")
+    input_3.type="name"
+    input_3.placeholder="Organization";
+    let btn_1 =document.createElement("button")
+    btn_1.innerText="SIGN UP"
+    let btn_2 =document.createElement("button")
+    btn_2.innerText="RETURN"
+    main_div.append(head,input_1,input_2,input_3,btn_1,btn_2)
+</script>
